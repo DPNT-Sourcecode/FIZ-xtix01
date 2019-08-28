@@ -8,4 +8,7 @@ def fizz_buzz(number):
         return 'fizz'
     elif number%5==0 or '5' in str(number):
         return 'buzz'
+    else:
+        return number
+
 
