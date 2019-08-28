@@ -8,4 +8,3 @@ def fizz_buzz(number):
         return 'buzz'
     else:
         return number
-
