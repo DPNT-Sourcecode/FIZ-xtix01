@@ -1,18 +1,24 @@
 # noinspection PyUnusedLocal
 def deluxe(num_len, number):
-    if num_len == 1 and number > 10:
+    if num_len == 1 and number > 10 and number%2 != 0:
+        return 'fizz buzz fake deluxe'
+    elif num_len == 1 and number > 10 and number%2 == 0:
         return 'fizz buzz deluxe'
     else:
         return 'fizz buzz'
 
 def fizz_deluxe(num_len, number):
-    if num_len == 1 and number > 10:
+    if num_len == 1 and number > 10 and number%2 != 0:
+        return 'fizz fake deluxe'
+    if num_len == 1 and number > 10 and number%2 == 0:
         return 'fizz deluxe'
     else:
         return 'fizz'
 
 def buzz_deluxe(num_len, number):
-    if num_len == 1 and number > 10:
+    if num_len == 1 and number > 10 and number%2 != 0:
+        return 'buzz fake deluxe'
+    if num_len == 1 and number > 10 and number%2 == 0:
         return 'buzz deluxe'
     else:
         return 'buzz'
@@ -36,4 +42,5 @@ def fizz_buzz(number):
             return 'deluxe'
         else:
             return number
+
 
