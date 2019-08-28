@@ -21,7 +21,11 @@ def fizz_buzz(number):
     elif number%5==0 or '5' in str(number):
         return 'buzz'
     else:
-        return number
+        if num_len == 1 and number>10:
+            return 'deluxe'
+        else:
+            return number
+
 
 
 
