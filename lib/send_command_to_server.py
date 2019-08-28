@@ -1,14 +1,14 @@
 import sys
 from tdl.queue.queue_based_implementation_runner import QueueBasedImplementationRunnerBuilder
 from tdl.runner.challenge_session import ChallengeSession
-from solutions.SUM import sum_solution
-from solutions.HLO import hello_solution
-from solutions.ARRS import array_sum
-from solutions.IRNG import int_range
-from solutions.FIZ import fizz_buzz_solution
-from solutions.CHK import checkout_solution
-from runner.utils import Utils
-from runner.user_input_action import get_user_input
+from lib.solutions.SUM import sum_solution
+from lib.solutions.HLO import hello_solution
+from lib.solutions.ARRS import array_sum
+from lib.solutions.IRNG import int_range
+from lib.solutions.FIZ import fizz_buzz_solution
+from lib.solutions.CHK import checkout_solution
+from lib.runner.utils import Utils
+from lib.runner.user_input_action import get_user_input
 
 
 """
@@ -67,3 +67,4 @@ ChallengeSession\
     .with_config(Utils.get_config())\
     .with_action_provider(lambda: get_user_input(sys.argv[1:]))\
     .start()
+
