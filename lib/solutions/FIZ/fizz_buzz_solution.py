@@ -38,9 +38,12 @@ def fizz_buzz(number):
     elif number%5==0 or '5' in str(number):
         return buzz_deluxe(num_len, number)
     else:
-        if num_len == 1 and number>10:
+        if num_len == 1 and number>10 and number%2 != 0:
+            return 'fake deluxe'
+        elif num_len == 1 and number>10 and number%2 == 0:
             return 'deluxe'
         else:
             return number
+
 
 
